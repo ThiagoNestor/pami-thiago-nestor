@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Voto</title>
+</head>
+
+<body>
+    
+  <script>
+    let idade = prompt("Qual a sua idade?");
+    idade = parseInt(idade); // converte de string pra número
+
+    if (idade < 16) {
+      alert("Você ainda não pode votar.");
+    } else if (idade >= 16 && idade < 18) {
+      alert("Voto opcional.");
+    } else if (idade >= 18 && idade <= 70) {
+      alert("Voto obrigatório.");
+    } else {
+      alert("Voto opcional (maior de 70 anos).");
+    }
+  </script>
+
+</body>
+</html>
